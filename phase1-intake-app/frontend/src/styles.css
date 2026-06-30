@@ -1,0 +1,90 @@
+/* ===========================================================================
+   Saans Check — design tokens
+   Palette grounded in the actual material world of this product: sandstone
+   quarry dust, terracotta, the deep ochre of cut Rajasthani stone, and the
+   one cool accent (a clear desert-sky teal) reserved only for "go get
+   checked" moments — so it reads as a deliberate signal, not decoration.
+   Rejected the generic medical blue/teal-on-white look on purpose: this is
+   not a hospital-app audience, it's a quarry break-time audience.
+   =========================================================================== */
+
+:root {
+  --sandstone-50: #fbf4ea;
+  --sandstone-100: #f3e3cc;
+  --sandstone-200: #e6c79b;
+  --sandstone-400: #c98f4c;
+  --sandstone-600: #9c5a34;
+  --sandstone-800: #5e3320;
+  --sandstone-900: #3a1f14;
+
+  --terracotta: #b3502f;
+  --terracotta-dark: #8a3a21;
+
+  --signal-teal: #2c7a72;
+  --signal-teal-dark: #1d5a54;
+  --signal-teal-bg: #e3f1ee;
+
+  --ink: #2a1d15;
+  --paper: #fffaf2;
+
+  --radius-lg: 20px;
+  --radius-md: 14px;
+  --radius-sm: 10px;
+
+  --shadow-soft: 0 8px 24px rgba(58, 31, 20, 0.12);
+  --shadow-press: 0 2px 6px rgba(58, 31, 20, 0.18);
+
+  --font-display: "Hind", "Noto Sans Devanagari", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--sandstone-50);
+  color: var(--ink);
+  font-family: var(--font-display);
+  -webkit-tap-highlight-color: transparent;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--signal-teal);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.screen {
+  width: 100%;
+}
+
+.centered-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: 1.2rem;
+  color: var(--sandstone-700, var(--sandstone-600));
+}

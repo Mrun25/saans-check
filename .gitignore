@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+venv_311/
+*.egg-info/
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Data and models (never commit real datasets or trained models — see data/README.md)
+phase2-proxy-classifier/data/raw/*
+!phase2-proxy-classifier/data/raw/.gitkeep
+phase2-proxy-classifier/data/embeddings/*
+!phase2-proxy-classifier/data/embeddings/.gitkeep
+phase2-proxy-classifier/models/*.pkl
+phase2-proxy-classifier/models/*_report.json
+!phase2-proxy-classifier/models/.gitkeep
+
+# Databases
+*.db
+*.sqlite3
+
+# Audio (never commit real recordings, especially anything from Phase 3's consented data)
+*.wav
+*.webm
+phase3-clinical-pilot/**/manifest.csv
+phase3-clinical-pilot/**/_stage2_embeddings_cache.npz
+
+# OS
+.DS_Store
+
+# Env
+.env
+
+.vercel

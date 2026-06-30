@@ -1,0 +1,6 @@
+venv/
+venv_311/
+phase1-intake-app/frontend/node_modules/
+phase2-proxy-classifier/data/
+__pycache__/
+*.pyc
