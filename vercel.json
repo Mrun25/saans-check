@@ -6,8 +6,11 @@
       "use": "@vercel/python"
     },
     {
-      "src": "phase1-intake-app/frontend/package.json",
-      "use": "@vercel/vite"
+      "src": "frontend/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
     }
   ],
   "routes": [
@@ -17,7 +20,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/phase1-intake-app/frontend/$1"
+      "dest": "/frontend/$1"
     }
   ]
 }

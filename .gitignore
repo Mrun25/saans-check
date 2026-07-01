@@ -13,13 +13,13 @@ dist/
 .vite/
 
 # Data and models (never commit real datasets or trained models — see data/README.md)
-phase2-proxy-classifier/data/raw/*
-!phase2-proxy-classifier/data/raw/.gitkeep
-phase2-proxy-classifier/data/embeddings/*
-!phase2-proxy-classifier/data/embeddings/.gitkeep
-phase2-proxy-classifier/models/*.pkl
-phase2-proxy-classifier/models/*_report.json
-!phase2-proxy-classifier/models/.gitkeep
+ml-pipeline/data/raw/*
+!ml-pipeline/data/raw/.gitkeep
+ml-pipeline/data/embeddings/*
+!ml-pipeline/data/embeddings/.gitkeep
+ml-pipeline/models/*.pkl
+ml-pipeline/models/*_report.json
+!ml-pipeline/models/.gitkeep
 
 # Databases
 *.db
@@ -28,8 +28,8 @@ phase2-proxy-classifier/models/*_report.json
 # Audio (never commit real recordings, especially anything from Phase 3's consented data)
 *.wav
 *.webm
-phase3-clinical-pilot/**/manifest.csv
-phase3-clinical-pilot/**/_stage2_embeddings_cache.npz
+clinical-pilot/**/manifest.csv
+clinical-pilot/**/_stage2_embeddings_cache.npz
 
 # OS
 .DS_Store
